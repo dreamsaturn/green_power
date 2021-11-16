@@ -56,6 +56,7 @@ public  class MyContractold {
         List<Type> inputParameters = Arrays.asList(new Utf8String("My belief"),new Utf8String("Green energy belongs to all mankind!!"));
 //        List<Type> inputParameters = Arrays.asList(new Address("0x00a1809eeeec0a53d948300312eb647c6efbfc2c"),new Utf8String("Hello,World!"));
         sendRequest.setArgs(inputParameters);
+        //
 
         String hashTrans = chainCloudService.sendRawTransaction(sendRequest).getData();
         System.out.println("transactionHash receipt hash: "+hashTrans);
